@@ -1,7 +1,7 @@
 //convert the first letter of the string in uppercase and then print the string
 package stringlearning;
 
-public class FirstCharUppercase {
+public class FirstCharUppercase1 {
 	public static void display(String str)
 	{
 		char[] ch= str.toCharArray();

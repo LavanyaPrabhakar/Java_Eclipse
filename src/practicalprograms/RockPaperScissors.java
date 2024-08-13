@@ -18,7 +18,7 @@ public class RockPaperScissors {
 		for(int i=0; i<n; i++)
 		{
 		 System.out.println("Enter user input: ");
-		 player1Move=scan.nextLine();
+		 player1Move=scan.nextLine().toLowerCase();
 	//	 scan.nextLine();
 		 player2Computer=random.nextInt(n);
 		 System.out.println("User input: "+player1Move);
@@ -26,17 +26,17 @@ public class RockPaperScissors {
 
 			if (player2Computer==0)
 			{
-			computerMove="Rock";
+			computerMove="rock";
 			System.out.println(computerMove);
 			}
 			else if (player2Computer==1)
 			{
-			computerMove="Paper";
+			computerMove="paper";
 			System.out.println(computerMove);
 			}
 			else if (player2Computer==2)
 			{
-			computerMove="Scissors";
+			computerMove="scissors";
 			System.out.println(computerMove);
 			}
 
@@ -45,19 +45,19 @@ public class RockPaperScissors {
 			System.out.println("Draw");
 			}
 					
-			else if ((player1Move.equals("Rock") && computerMove.equals("Paper"))||
-					(player1Move.equals("Paper") && computerMove.equals("Scissors")) ||
-					(player1Move.equals("Scissors") && computerMove.equals("Rock")))
+			else if ((player1Move.equals("rock") && computerMove.equals("paper"))||
+					(player1Move.equals("paper") && computerMove.equals("scissors")) ||
+					(player1Move.equals("scissors") && computerMove.equals("rock")))
 			{
 			System.out.println("print computer wins this time");
 			computerCount++;
 			}
 			
 			
-			else if ((player1Move.equals("Paper") && computerMove.equals("Rock")) ||
-					(player1Move.equals("Scissors") && computerMove.equals("Paper")) ||
-					(player1Move.equals("Rock") && computerMove.equals("Scissors")))
-			{
+			else if ((player1Move.equals("paper") && computerMove.equals("rock")) ||
+					(player1Move.equals("scissors") && computerMove.equals("paper")) ||
+					(player1Move.equals("rock") && computerMove.equals("scissors")))
+			{	
 			System.out.println("print player1 wins this time");
 			player1Count++;
 			}
